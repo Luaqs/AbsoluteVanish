@@ -1,0 +1,34 @@
+name: AbsoluteVanish
+author: Luaq
+version: 1.5
+main: zone.luaq.av.AbsoluteVanish
+depend: [LLib]
+
+commands:
+  vanish:
+    aliases: [av, v, absolutevanish]
+    usage: /vanish [player]
+    permission: av.togglevanish
+    permission-message: §cSorry, but you do not have permission to use this command.
+  vanishcheck:
+    aliases: [vc, avc, checkvanish, cv]
+    usage: /vanishcheck <player>
+    permission: av.check.others
+    permission-message: §cSorry, but you do not have permission to use this command.
+  vanishreload:
+    aliases: [avr, vr, reloadvanish, rv]
+    usage: /vanishreload
+    permission: av.reload
+    permission-message: §cSorry, but you do not have permission to use this command.
+
+permissions:
+  av.togglevanish:
+    defualt: op
+  av.togglevanish.others:
+    default: op
+  av.reload:
+    default: op
+  av.cansee:
+    default: op
+  av.check.others:
+    default: op

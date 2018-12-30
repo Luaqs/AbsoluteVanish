@@ -1,0 +1,76 @@
+
+settings:
+  allowChat:
+    description: "Whether or not vanished players can talk in chat."
+    value: false
+  allowPvp:
+    description: "Whether or not vanished players can engage in PvP"
+    value: false
+  allowDamage:
+    description: "Whether or not vanished players can take damage."
+    value: false
+  allowHunger:
+    description: "Whether or not vanished players can lose hunger."
+    value: false
+  allowMobTargeting:
+    description: "Whether or not vanished players get targeted by mobs."
+    value: false
+  allowItemDrop:
+    description: "Whether or not vanished players can drop items."
+    value: false
+  allowItemPickUp:
+    description: "Whether or not vanished players can pick up items."
+    value: false
+  allowThrowing:
+    description: "Whether or not vanished players can throw/launch projectiles."
+    value: false
+  allowRegularChestOpen:
+    description: "Whether or not vanished players open chests silently."
+    value: false
+  allowPressurePlateUse:
+    description: "Whether or not vanished players can trigger pressure plates."
+    value: false
+  allowBuilding:
+    description: "Whether or not vanished players can place and/or break blocks"
+    value: false
+  safeChestOpen:
+    sendMessage:
+      description: "Whether or not vanished players receive a message upon opening a chest safely."
+      value: false
+  saveStateMode:
+    description: "Whether or not inventories, flight state, gamemode, location, etc. are saved before vanishing."
+    value: true
+    saveInventoryState:
+      description: "Whether or not inventories will be cleared and returned when entering and leaving vanish."
+      value: true
+    saveFlightState:
+      description: "Whether or not flight will be saved and returned when entering and leaving vanish."
+      value: true
+    saveLocationState:
+      description: "Whether or not location will be saved and returned when entering and leaving vanish."
+      value: true
+    saveGameModeState:
+      description: "Whether or not gamemode will be saved and returned when entering and leaving vanish."
+      value: true
+  messages:
+    actionbarMessage:
+      description: "The message that appears above a vanished players hotbar/actionbar."
+      value: "&aYou are currently &6vanished&a."
+    joinMessage:
+      description: "Message that appears when a vanished player joins."
+      value: "&aHeads up! You are still vanished."
+    vanishToggle:
+      description: "Message that shows up when a player toggles their vanish."
+      value: "&aToggled your vanish &6%s&a."
+      other:
+        description: "Message that appears when a player toggles another player's vanish."
+        value: "&aToggled &6%1$s's &avanish &6%2$s&a."
+      targetMessage:
+        description: "Message that appears in the target's chat."
+        value: "&6%1$s &atoggled your vanish &6%2$s&a."
+    playerOfflineMessage:
+      description: "Message that appears when a target player isn't found."
+      value: "&cSorry, but it appears as if this player is offline."
+    talkInVanishMessage:
+      description: "Message that appears when a vanished player attempts to chat. (Only if allowChat is false)"
+      value: "&cPlease try to refrain from talking in vanish."
